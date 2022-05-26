@@ -48,3 +48,4 @@ sum(values_ecsa == 1)
 length(tips_ecsa) 
 tips_ecsa_to <- as.data.frame(tips_ecsa)
 write.table(tips_ecsa_to, file="ecsa.tsv", quote=F,sep="\t",row.names=F)
+
