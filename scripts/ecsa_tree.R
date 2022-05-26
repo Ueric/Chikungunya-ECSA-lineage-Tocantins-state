@@ -34,8 +34,6 @@ ecsa <- ggtree(tree, mrsd="2022-02-09", as.Date=TRUE, size=0.4, color = "gray50"
 #geom_text(aes(label=node), hjust=-.3)
 ecsa
 
-
-
 ecsa_final <- ecsa %<+% metadata +
   geom_tippoint(aes(
     subset=(state=='Alagoas')), size=2.5, fill="#ae017e", color='black',shape=21) +
@@ -71,3 +69,7 @@ ecsa_final <- ecsa %<+% metadata +
 
 ecsa_final
 ggsave(file="new_tree.pdf", units = "cm", width=15, height=14, dpi=600)
+
+date_decimal(2021.1644)
+date_decimal(2021.1644-0.358)
+date_decimal(2021.1644+0.715)
